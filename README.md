@@ -22,10 +22,10 @@ php artisan vendor:publish --tag=icons
 
 ## Usage
 
-Call any icon by passing its name as the `icon` prop to the Blade component:
+Call any icon by passing its name as the `icon` prop to the `x-df::icon` Blade component:
 
 ```blade
-<x-icon :icon="'chevron-down'" class="w-4 h-4 text-gray-600" />
+<x-df::icon :icon="'chevron-down'" class="w-4 h-4 text-gray-600" />
 ```
 
 All SVGs automatically inherit attributes:
