@@ -1,0 +1,48 @@
+{
+    "name": "daniellefence/icons",
+    "version": "1.0.0",
+    "description": "Fontawesome icon wrapper for Danielle Fence websites",
+    "keywords": [
+        "daniellefence",
+        "icons"
+    ],
+    "homepage": "https://github.com/daniellefence/icons",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Shane Barron",
+            "email": "sbarron@daniellefence.net",
+            "role": "Developer"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "Daniellefence\\Icons\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Daniellefence\\Icons\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Daniellefence\\Icons\\IconsServiceProvider"
+            ],
+            "aliases": {
+                "Icons": "Daniellefence\\Icons\\IconsFacade"
+            }
+        }
+    }
+}
